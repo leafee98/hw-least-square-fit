@@ -71,6 +71,7 @@ def solve():
     draw(input_x, input_y, fit_func, './out.png')
 
     print(x)
+    print('function:', '%.3fx^2 + %.3fx + %.3f' % (x[2], x[1], x[0]))
 
 def draw(input_x, input_y, func, out_path):
     fig, ax = plt.subplots()
