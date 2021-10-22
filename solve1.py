@@ -68,18 +68,18 @@ def solve():
             res += x[i] * base_funcs[i](param)
         return res
 
-    draw(input_x, input_y, fit_func)
+    draw(input_x, input_y, fit_func, './out.png')
 
     print(x)
 
-def draw(input_x, input_y, func):
+def draw(input_x, input_y, func, out_path):
     fig, ax = plt.subplots()
     ax.scatter(input_x, input_y)
 
     fit_x = np.linspace(0, 1, 1000)
     fit_y = np.array([func(x) for x in fit_x])
     ax.plot(fit_x, fit_y)
-    plt.savefig('./out.png')
+    plt.savefig(out_path)
 
 
 def main():
