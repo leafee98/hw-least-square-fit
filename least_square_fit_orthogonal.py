@@ -1,7 +1,7 @@
-from solve1 import calc_inner_product
-from solve1 import get_input_tuple
-from solve1 import assumed_actual_func
-from solve1 import draw
+from least_square_fit import calc_inner_product
+from least_square_fit import get_input_tuple
+from least_square_fit import assumed_actual_func
+from least_square_fit import draw
 
 def another_sample_tuple():
     input_x = [0, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
