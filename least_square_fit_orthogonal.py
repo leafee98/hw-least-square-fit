@@ -147,6 +147,11 @@ class orthogonal_generator:
             return self.P[k]
 
         for i in range(self.cached, k):
+            r'''
+            P_{k+1}(x) = (x - \alpha_k)P_k(x) - \beta_k P_{k-1}(x) \\
+                       = x P_k(x) - \alpha_k P_k(x) - \beta_k P_{k-1}(x)
+                          tmp1          tmp2              tmp3
+            '''
 
             tmp1 = self.P[i].multi_x()
             tmp2 = self.P[i].multi_k(self.alpha[i])
